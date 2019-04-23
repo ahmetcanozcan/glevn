@@ -1,0 +1,18 @@
+{
+  "name": "glevn",
+  "version": "1.0.0",
+  "description": "The easiest way to menage global and envoirment variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "global",
+    "envoirment",
+    "variables",
+    "menage",
+    "easy"
+  ],
+  "author": "Ahmetcan <ahmetcanozcan7@gmail.com>",
+  "license": "ISC"
+}
