@@ -14,7 +14,7 @@ const parser = require('yargs-parser');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const existSync = fs.existsSync | os.existSync;
+let existsSync = fs.existsSync || os.existsSync;
 
 
 
@@ -23,7 +23,7 @@ const existSync = fs.existsSync | os.existSync;
  * object contains glevn options, args and  execFile  
  * 
  *  @param {Array} argv full process arguments including 'node' leading arg
- *  @returns {Objects} { options , execFile, args }
+ *  @returns {Objects} { options , execFile }
  */
 module.exports = function (argv) {
 
@@ -32,7 +32,7 @@ module.exports = function (argv) {
   }
 
   let args = format(argv.slice(2));
-  let execFile = argv[0];
+  let execFile = args[0];
 
   let parsed = parser(args.slice(1), {
     configuration: {
@@ -63,7 +63,7 @@ function format(args) {
   for (let i = 0; i < args.length; i++) {
     //if arguments looks like a file
     //replace it and break the loop
-    if (args[i] === '.' || existSync(args[i])) {
+    if (args[i] === '.' || existsSync(args[i])) {
       let temp = args[i];
       args.splice(i, 1);
       args.splice(0, 0, temp);
