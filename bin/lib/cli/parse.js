@@ -23,7 +23,7 @@ let existsSync = fs.existsSync || os.existsSync;
  * object contains glevn options, args and  execFile  
  * 
  *  @param {Array} argv full process arguments including 'node' leading arg
- *  @returns {Objects} { options , execFile }
+ *  @returns {Object} { options: Object , execFile:String }
  */
 module.exports = function (argv) {
 
@@ -64,7 +64,8 @@ function format(args) {
     //if arguments looks like a file
     //replace it and break the loop
     if (args[i] === '.' || existsSync(args[i])) {
-      let temp = args[i];
+      let arr = args[i].split(path.delimiter);
+      let temp = arr[arr.length - 1];
       args.splice(i, 1);
       args.splice(0, 0, temp);
     }
