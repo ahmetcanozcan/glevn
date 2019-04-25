@@ -1,0 +1,6 @@
+DEFINE MODULE
+
+import lodash as _
+import module1 
+import module2.child as name
+import module3.child

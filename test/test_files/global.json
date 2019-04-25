@@ -1,0 +1,28 @@
+{
+
+  "MODULE":[
+    {
+      "name":"_",
+      "ref":"lodash"
+    },
+    {
+      "name":"",
+      "ref":"module1"
+    },
+    {
+      "name":"name",
+      "ref":"module2.child"
+    },
+    {
+      "name":"",
+      "ref":"module3.child"
+    }
+    
+  ],
+  "CONFIG":{
+    "foo":"bar",
+    "pi":3,
+    "isGold": true
+  }
+
+}

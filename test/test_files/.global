@@ -1,0 +1,16 @@
+DEFINE MODULE
+
+#it's a comment
+
+import lodash as _  
+import module1 
+import module2.child as name 
+import module3.child
+
+DEFINE CONFIG
+
+#lorem ipsum dolor sit amet
+
+assign foo = bar
+assign-num pi = 3
+assign-bool isGold = true

@@ -7,3 +7,4 @@
  */
 
 module.exports.env = require('./env');
+module.exports.global = require('./global');

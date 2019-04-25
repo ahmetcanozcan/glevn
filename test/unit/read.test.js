@@ -24,3 +24,15 @@ test('Reads .env file correctly', () => {
     HELLO: "WORLD"
   });
 })
+
+test('Reads global.json correctly', ()=>{
+
+  expect(read.global(path.join(ROOT_URL,'global.json')))
+})
+
+test('Reads .global files correctly', ()=> {
+
+    const global = require(path.join(ROOT_URL,'global.json'));
+
+    expect(read.global(path.join(ROOT_URL,'.global'))).toMatchObject(global);
+});
