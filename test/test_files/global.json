@@ -1,28 +1,31 @@
 {
 
-  "MODULE":[
-    {
-      "name":"_",
-      "ref":"lodash"
+  "MODULE": [{
+      "name": "_",
+      "ref": "lodash"
     },
     {
-      "name":"",
-      "ref":"module1"
+      "name": "",
+      "ref": "module1"
     },
     {
-      "name":"name",
-      "ref":"module2.child"
+      "name": "name",
+      "ref": "module2.child"
     },
     {
-      "name":"",
-      "ref":"module3.child"
+      "name": "",
+      "ref": "module3.child"
     }
-    
+
   ],
-  "CONFIG":{
-    "foo":"bar",
-    "pi":3,
+  "CONFIG": {
+    "foo": "bar",
+    "pi": 3,
     "isGold": true
-  }
+  },
+  "UNWATCHED": [
+    "node_modules/",
+    ".gitignore"
+  ]
 
 }
