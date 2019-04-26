@@ -1,4 +1,4 @@
-var cli = require('../../bin/lib/cli');
+var cli = require('../../lib/cli');
 
 test('Parses command correctly', () => {
 

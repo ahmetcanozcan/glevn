@@ -1,4 +1,4 @@
-const read = require('../../bin/lib/read');
+const read = require('../../lib/read');
 const path = require('path');
 const ROOT_URL = path.join(process.cwd(), 'test', 'test_files');
 test('Reads env.json file correctly', () => {
@@ -25,14 +25,14 @@ test('Reads .env file correctly', () => {
   });
 })
 
-test('Reads global.json correctly', ()=>{
+test('Reads global.json correctly', () => {
 
-  expect(read.global(path.join(ROOT_URL,'global.json')))
+  expect(read.global(path.join(ROOT_URL, 'global.json')))
 })
 
-test('Reads .global files correctly', ()=> {
+test('Reads .global files correctly', () => {
 
-    const global = require(path.join(ROOT_URL,'global.json'));
+  const global = require(path.join(ROOT_URL, 'global.json'));
 
-    expect(read.global(path.join(ROOT_URL,'.global'))).toMatchObject(global);
+  expect(read.global(path.join(ROOT_URL, '.global'))).toMatchObject(global);
 });
