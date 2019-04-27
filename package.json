@@ -1,6 +1,6 @@
 {
   "name": "glevn",
-  "version": "0.0.1",
+  "version": "0.1.20",
   "description": "The easiest way to menage global and envoirment variables",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,10 @@
   "preferGlobal": true,
   "keywords": [
     "global",
-    "envoirment",
+    "environment",
     "variables",
-    "menage",
-    "easy"
+    "manage",
+    "restart"
   ],
   "author": "Ahmetcan <ahmetcanozcan7@gmail.com>",
   "license": "ISC",

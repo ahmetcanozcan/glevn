@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require('../lib/utils');
 const glevn = require('../lib');
 
