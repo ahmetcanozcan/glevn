@@ -61,7 +61,7 @@ Global file includes Global modules, configurations, unwatched file. Example .gl
   import module
   #That's a comment
 
-  DEFINE CONGIG
+  DEFINE CONFIG
 
   assign project_name = glevn
   assign-num year = 1881
