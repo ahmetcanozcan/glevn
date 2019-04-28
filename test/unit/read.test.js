@@ -25,14 +25,14 @@ test('Reads .env file correctly', () => {
   });
 })
 
-test('Reads global.json correctly', () => {
+test('Reads glevnfile.json correctly', () => {
 
-  expect(read.global(path.join(ROOT_URL, 'global.json')))
+  expect(read.glevnfile(path.join(ROOT_URL, 'glevnfile.json')))
 })
 
-test('Reads .global files correctly', () => {
+test('Reads .glevnfile files correctly', () => {
 
-  const global = require(path.join(ROOT_URL, 'global.json'));
+  const glevnfile = require(path.join(ROOT_URL, 'glevnfile.json'));
 
-  expect(read.global(path.join(ROOT_URL, '.global'))).toMatchObject(global);
+  expect(read.glevnfile(path.join(ROOT_URL, '.glevnfile'))).toMatchObject(glevnfile);
 });

@@ -1,10 +1,13 @@
 {
   "name": "glevn",
-  "version": "0.1.20",
-  "description": "The easiest way to menage global and envoirment variables",
+  "version": "0.2.1",
+  "description": "A tool that helps  manage  envoirment variables",
   "main": "index.js",
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "url": "http://www.github.com/ahmetcanozcan/glevn"
   },
   "bin": {
     "glevn": "./bin/index.js"

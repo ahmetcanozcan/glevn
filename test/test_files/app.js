@@ -1,20 +1,3 @@
-console.log('\n\n\n\n\n');
-console.warn('/////////////////////////s//APP JS/////////////////////');
-console.warn('///////////////////////////APP JS/////////////////////');
-console.warn('///////////////////////////APP JS/////////////////////');
-console.warn('///////////////////////////APP JS/////////////////////');
-console.warn('///////////////////////////APP JS/////////////////////');
-console.warn('///////////////////////////APP JS/////////////////////');
-console.log(process.env.SECRET + 2);
-console.log('\n\n\n\n\n');
+require('../../index').init();
 
-
-let x = 0;
-setInterval(() => {
-  let c = 1 / x--;
-  console.log(c);
-  if (c < 0) {
-    throw SyntaxError;
-  }
-
-}, 1000)
+console.log(process.env.FOO);
