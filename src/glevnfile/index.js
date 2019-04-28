@@ -1,52 +1,27 @@
-/**
- * 
- * 
- * 
- */
-
-const Message = require('../../lib/utils/Message');
-
 module.exports = function () {
+  const read = require('../../lib/read/glevnfile');
+  const path = require('path');
 
-  let cont = true;
-  process.on('message', ({
-    head,
-    body
-  }) => {
-    if (head.from === 'glevn') {
-      cont = false;
-      console.log(cont);
-      for (key in body) {
-        switch (key) {
-          case "CONFIG":
-            console.log('Config properties adding...');
-            global.config = body.CONFIG;
-            break;
-          case "MODULE":
-            console.log('Module properities adding...');
-            for (let i = 0; i < body.MODULE.length; i++) {
-              let temp = body.MODULE[i];
-              let moduleArr = temp.ref.split('.');
-              let module = require(moduleArr[0]);
-              for (let j = 1; j < moduleArr.length; j++) {
-                module = module[moduleArr[j]];
-              }
-              let module_name = temp.name || moduleArr.reverse()[0];
-              global[module_name] = module;
-            }
-            break;
+  const g = process.argv[2] || '.glevnfile';
+  const FILE_PATH = path.join(process.cwd(), g);
 
-          default:
-            break;
-        }
-      }
+  const glevnfile = read(FILE_PATH);
 
+  const configs = glevnfile.CONFIG;
+  const modules = glevnfile.MODULE;
+
+  global.config = configs;
+
+  for (let i in modules) {
+    let temp = modules[i];
+    let refArr = temp.ref.split('.');
+    let m = require(refArr[0]);
+    for (let i = 1; i < refArr.length; i++) {
+      m = m[refArr[i]];
     }
-  });
-  process.send(new Message().from('app').add('handshake', true));
 
+    let name = temp.name || refArr.reverse()[0];
+    global[name] = m;
 
-
-  console.debug('cont...')
-
+  }
 }
