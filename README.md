@@ -1,18 +1,14 @@
 # GLEVN
 
----
-
-Glevn() is a tool that helps manage node based application's envorinment variables by reading from a file.
+Glevn is a tool that helps manage node based application's envorinment variables.
 
 ## INSTALLATION
 
----
-
-Glevn can be installed either globally or locally(recommended way). For installing globally:
+Glevn can be installed either globally or locally. Example for installing globally:
 `npm install -g glevn`
 and glevn will be installed globally to your system path.
 
-Also Glevn can be installed locally as developer dependency:
+Also Glevn can be installed locally:
 `npm install --save-dev glevn`
 
 If glevn is intalled locally, it is only available on npm scripts(`npm run start`).
@@ -21,7 +17,7 @@ If glevn is intalled locally, it is only available on npm scripts(`npm run start
 
 ---
 
-Glevn require a environment file named `.env` in root directory of your project. That file path and name can be changed(Also using json file supported).
+Glevn require a environment file named `.env` in root directory of your project. That file path and name can be changed(Also using json files supported).
 
 ### Example .env file
 
@@ -43,17 +39,17 @@ also json file can be used instead of .env file
 }
 ```
 
-and run your javascript using `glevn app.js`. in your app.js file you can reach all envoirment variables using `process.env.<variable name>`.
+and run your `app.js` file using `glevn app.js`. in your `app.js` file you can reach all envoirment variables using `process.env.<variable name(key)>`.
 
 ### GLEVMON
 
-Glevmon is a feature that restart the app when a file changed in watched directory or app crashed. Activating glevmon require some additional arguments : `--whatch=dirname/` and `--glevmon`. for example:
+Glevmon is a feature that restarts the app when a file changed in watched directory. Activating glevmon require some additional arguments (`--glevmon`). For example:
 
-`glevmon app.js --glevmon --whatch=src`
+`glevmon app.js --glevmon`
 
-### .glevnfile(Devoloping)
+### .glevnfile
 
-Global file includes Global modules, configurations, unwatched file. Example .glevnfile:
+`.glevnfile` includes global modules, configurations, unwatched files. Example .glevnfile:
 
 ```python
   DEFINE MODULES
@@ -74,7 +70,7 @@ Global file includes Global modules, configurations, unwatched file. Example .gl
 
 ```
 
-Also json file can be used instead of .glevnfile:
+Also json file is allowed:
 
 ```json
 {
