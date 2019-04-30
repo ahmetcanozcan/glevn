@@ -1,5 +1,0 @@
-DEFINE CONFIG
-
-assign foo = bar
-assign-num pi = 3
-assign-bool isGold = true
