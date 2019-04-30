@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  font-size: 'Roboto', 'sans-serif'
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 60vh;
+  top: 0;
+  z-index: -1;
+  position: fixed;
+  padding-top: 10vh;
+  text-align: center;
+  background-color: #f2d4c2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23d9a796' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23bf5f56'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  box-shadow: 0 10px black;
+  padding: 15vh 1rem;
+}
+
+.section-header {
+  font-size: 52px;
+}
+
+.section-body {
+  margin-top: 10vh;
+  font-size: 22px;
+  padding-left: 20%;
+}
+
+.section-hr {
+  width: 10%;
+  height: 8px;
+  background-color: #F2D4C2;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+}
+
+.space {
+  height: 10vh;
+}
+
+h1 {
+  font-size: 120px;
+  letter-spacing: 55px;
+  color: rgb(158, 71, 63);
+  text-shadow: 2px 2px black;
+
+}
+
+p {
+  color: rgb(99, 45, 27);
+  letter-spacing: 7px;
+  font-size: 20px;
+}
+
+section.one {
+  margin-top: 60vh;
+  background: #731810;
+  box-shadow: 0px -10px 35px 1px black;
+
+}
+
+
+section.one * {
+  color: #F2D4C2;
+}
+
+section.one a {
+  color: yellowgreen;
+  text-decoration: underline;
+}
+
+section.one .code {
+  position: relative;
+  margin-top: 5vh;
+  padding: .1rem .4rem;
+  background-color: rgb(219, 207, 207);
+  color: rgb(51, 15, 15);
+  display: inline-block;
+  font-family: 'PT Serif', serif;
+}
+
+section.one code .lang {
+  position: absolute;
+  font-size: 12px;
+  color: gray;
+  opacity: .4;
+}
+
+section.one a:hover {
+  text-decoration: underline;
+  color: rgb(108, 145, 34);
+}
+
+section.one ul li {
+  margin-bottom: 1rem;
+}
+
+section.one ul li:before {
+  content: '☼  ';
+  font-size: 60%;
+  margin-right: 1rem;
+  display: inline-block;
+  transform: translateY(-4px);
+}
+
+section.two {
+  padding: 0;
+  position: relative;
+  background-color: rgb(223, 215, 209)
+}
+
+section.two .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #731810;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 59%, 83% 23%);
+  clip-path: polygon(0 0, 100% 0, 100% 59%, 83% 23%);
+}
+
+section.two .body .big {
+  font-size: 400%;
+}
+
+section.two .body .big-medium {
+  font-size: 300%;
+}
+
+section.two .body .medium {
+  font-size: 200%;
+}
+
+a.fork {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  margin-left: 41%;
+  padding: .5rem 3rem;
+  background-color: yellowgreen;
+  color: black;
+  transition: 300ms;
+}
+
+a.fork:hover {
+  color: yellowgreen;
+  background-color: black
+}
+
+
+section.two .body {
+  padding-top: 25vh;
+  color: #1a2002;
+  font-size: 32px;
+}
+
+.d-small {
+  display: none;
+}
+
+@media screen and (max-width:960px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 72px;
+    letter-spacing: 0;
+  }
+
+  header p {
+    letter-spacing: 0;
+  }
+
+  .d-small {
+    display: inherit;
+  }
+
+  section.two .body .big {
+    font-size: 200%;
+  }
+
+  section.two .body .big-medium {
+    font-size: 150%;
+  }
+
+  section.two .body .medium {
+    font-size: 110%;
+  }
+
+}
