@@ -1,6 +1,6 @@
 # GLEVN
 
-Glevn is a tool that helps manage node based application's envorinment variables.
+Glevn is a tool that helps manage node based application's environment variables.
 
 ## INSTALLATION
 
