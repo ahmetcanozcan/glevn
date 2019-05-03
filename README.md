@@ -87,3 +87,9 @@ Also json file is allowed:
   "UNWATCHED": ["src/node_modules/", "*.md"]
 }
 ```
+
+### Example Project
+
+Let's try that stuff on the [glevn example project](http://github.com/ahmetcanozcan/example-glevn)
+
+
