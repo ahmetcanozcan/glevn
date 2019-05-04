@@ -1,6 +1,6 @@
 # GLEVN
 
-Glevn is a tool that helps manage node based application's envorinment variables.
+Glevn is a tool that helps manage node based application's environment variables.
 
 Glevn does **not** require any changes in your code.
 
@@ -94,4 +94,4 @@ Also json file is allowed:
 
 ### Example Project
 
-Let's try that stuff on the [glevn example project](http://github.com/ahmetcanozcan/glevn-example)
+Let's try that stuff on the [glevn example project](http://github.com/ahmetcanozcan/example-glevn)
