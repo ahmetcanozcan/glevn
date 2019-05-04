@@ -2,6 +2,10 @@
 
 Glevn is a tool that helps manage node based application's envorinment variables.
 
+Glevn does **not** require any changes in your code.
+
+[![npm version](https://badge.fury.io/js/glevn.svg)](https://badge.fury.io/js/glevn)
+
 ## INSTALLATION
 
 Glevn can be installed either globally or locally. Example for installing globally:
@@ -87,3 +91,7 @@ Also json file is allowed:
   "UNWATCHED": ["src/node_modules/", "*.md"]
 }
 ```
+
+### Example Project
+
+Let's try that stuff on the [glevn example project](http://github.com/ahmetcanozcan/glevn-example)
